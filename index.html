@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoboStore</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <header>
@@ -26,7 +27,95 @@
             </div>
         </div>
     </header>
+    <main>
+        <section class="hero">
+            <h1 class="texto1">Bem-vindo à WolfStore</h1>
+            <p class="texto1">Confira nossos produtos e especificações técnicas.</p>
+        </section>
+        <section class="content">
+            <div class="media">
+                <img src="https://media1.tenor.com/m/9VJzopra2pwAAAAd/god-of.gif" alt="Descrição do GIF">
+            </div>
+            <div class="details">
+                <h2>God of War Ragnarök</h2>
+                <p>God of War Ragnarök é um jogo de ação e aventura onde os jogadores assumem o papel de Kratos e seu filho enquanto embarcam em uma missão para impedir a chegada de Ragnarök. Os jogadores exploram os Nove Reinos, lutando contra inimigos em combate corpo a corpo corpo contra invasores semelhantes a humanos e criaturas fantásticas. Os jogadores usam o Machado Leviatã e as Lâminas do Caos acorrentadas para lutar contra os inimigos, com ataques que resultam em grandes jatos de sangue vermelho, decapitação e desmembramento. Depois de enfraquecer um inimigo, os jogadores podem realizar movimentos finais que retratam empalamento, desmembramento e decapitação em close-up. A linguagem forte é usada no diálogo.</p>
+                <article class="specs">
+                    <h2>Especificações Técnicas</h2>
+                    <ul>
+                        <li><strong>Processador:</strong> Intel Core i7-10700KF</li>
+                        <li><strong>Placa de Vídeo:</strong> NVIDIA GeForce RTX 2070</li>
+                        <li><strong>Memória RAM:</strong> 16GB</li>
+                        <li><strong>Armazenamento:</strong> 72GB SSD</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
 
-    
+        <section class="compras-jogos">
+            <div class="carousel">
+                <div class="carousel-item active">
+                    <img src="https://cdnb.artstation.com/p/assets/images/images/055/214/093/large/haykel-mhadbi-god-of-war-ragnarok-landing-page.jpg?1666382668" alt="Imagem 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://wallpapercave.com/wp/wp11484884.jpg" alt="Imagem 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.theloadout.com/wp-content/sites/theloadout/2022/07/god-of-war-ragnarok-characters-12.jpg" alt="Imagem 3">
+                </div>
+                <div class="carousel-item">
+                    <video controls>
+                        <source src="caminho/para/video.mp4" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                </div>
+                <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+                <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+            </div>
+            <div class="painel-venda">
+                <h2>God of War Ragnarök</h2>
+                <p>Kratos e Atreus embarcam em uma jornada mítica em busca de respostas antes que o Ragnarök chegue – agora no PC. </p>
+                <p>Gênero: Ação, Aventura, RPG <br>
+                    Desenvolvedor: Santa Monica Studio, Jetpack Interactive <br>
+                    Editora: PlayStation Publishing LLC <br>
+                    Franquia: PlayStation Studios, God of War <br>
+                    Data de lançamento: 19 Set, 2024  <br></p>
+                <p class="preco">R$ 299,99</p>
+                <button class="comprar">Comprar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section images">
+                <div class="image-container">
+                    <img src="https://gameranx.com/wp-content/uploads/2022/01/God-of-War.jpg" alt="Jogo 1">
+                    <div class="overlay">God Of War</div>
+                </div>
+                <div class="image-container">
+                    <img src="https://wallpapercave.com/wp/H3odrt7.jpg" alt="Jogo 2">
+                    <div class="overlay">God Of War 2</div>
+                </div>
+                <div class="image-container">
+                    <img src="https://th.bing.com/th/id/OIP.y7NhoursDyMH3Bu7qCSFVQHaEK?rs=1&pid=ImgDetMain" alt="Jogo 3">
+                    <div class="overlay">God Of War Ghoust Of Sparta</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Empresa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+
 </body>
+<script>let currentIndex = 0;
+
+    function moveCarousel(direction) {
+        const items = document.querySelectorAll('.carousel-item');
+        items[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + direction + items.length) % items.length;
+        items[currentIndex].classList.add('active');
+    }</script>
 </html>

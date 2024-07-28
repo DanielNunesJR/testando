@@ -10,7 +10,8 @@
 }
 
 body{
-    background-color: black;
+   
+  background-color: #000;
 
 
 }
@@ -86,3 +87,365 @@ margin-right: 10px;
     font-size: 20px;
     color: #000;
 }
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #282c34;
+    color: #6163fb;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #3d3d3d;
+    background-image: linear-gradient(45deg, #FFFFFF, #808080);
+    border-radius: 8px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #0f0f10;
+    color: #1d5f71;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.media {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 320px;
+}
+
+.details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.details h2 {
+    margin: 0 0 10px;
+    color: #333;
+    font-family: "Kanit", sans-serif
+}
+
+.details p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.specs {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+strong {
+    color: #000;
+}
+
+.texto1{  
+    color: #fff;
+    text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #808080,
+        0 0 30px #808080,
+        0 0 40px #808080,
+        0 0 50px #808080,
+        0 0 60px #808080;
+    transition:transform 0.3s ease-in-out;
+}
+
+.texto1:hover {
+    transform: scale(1.2)
+}
+
+.compras-jogos {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.compras-jogos h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.carousel-item {
+    display: none;
+    text-align: center;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel img, .carousel video {
+    width: 75%;
+    border-radius: 8px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.detalhes-jogo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.detalhes-jogo h2 {
+    margin: 10px 0;
+}
+
+.detalhes-jogo p {
+    margin: 5px 0;
+}
+
+.preco {
+    font-size: 1.2em;
+    color: #e74c3c;
+}
+
+.comprar {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comprar:hover {
+    background-color: #2980b9;
+}.compras-jogos {
+    display: flex;
+    justify-content: space-between;
+    background-color: #070707;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+    flex: 1;
+    max-width: 60%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.carousel-item {
+    display: none;
+    text-align: center;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel img, .carousel video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.painel-venda {
+    flex: 1;
+    max-width: 35%;
+    margin-left: 20px;
+    text-align: left;
+    color: white;
+}
+
+.painel-venda h2 {
+    margin: 10px 0;
+}
+
+.painel-venda p {
+    margin: 5px 0;
+}
+
+.preco {
+    font-size: 1.2em;
+    color: #d4cfcf;
+}
+
+.comprar {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comprar:hover {
+    background-color: #2980b9;
+}
+
+
+footer {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    position: relative;
+    margin: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.footer-bottom {
+    background-color: #ebe8e8;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+
+    
+        
+    
